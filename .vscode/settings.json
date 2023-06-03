@@ -1,0 +1,23 @@
+{
+    "C_Cpp.default.includePath": [
+        "include/",
+        "include/GP",
+        "import/simplex/include",
+        "import/tnt/include"
+    ],
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.clang_format_sortIncludes": true,
+    "C_Cpp.clang_format_style": "file:${workspaceFolder}/.clang-format",
+    "C_Cpp.formatting": "clangFormat",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "C_Cpp.default.cppStandard": "c++14",
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "files.associations": {
+        "cstdlib": "cpp",
+        "strstream": "cpp",
+        "sstream": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp"
+    },
+}
