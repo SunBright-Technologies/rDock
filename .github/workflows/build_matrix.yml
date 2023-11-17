@@ -60,6 +60,5 @@ jobs:
     - name: Create release
       uses: actions/create-release@v1
       with:
-        tag_name: ${{ steps.set_version.outputs.RELEASE_VERSION }}
-        release_name: Release ${{ steps.set_version.outputs.RELEASE_VERSION }}
+        tag: v${{ steps.set_version.outputs.RELEASE_VERSION }}
         artifacts: artifacts/
