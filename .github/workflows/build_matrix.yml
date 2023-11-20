@@ -53,6 +53,9 @@ jobs:
       with:
         path: artifacts/
 
+    - name: "[test] list artifacts"
+      run: ls -lthar artifacts/*
+
     - name: Set version
       id: set_version
       run: echo "RELEASE_VERSION=$(date +%y.%m).${{ github.run_number }}" >> "$GITHUB_OUTPUT"
