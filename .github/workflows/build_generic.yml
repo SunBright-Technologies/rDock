@@ -43,11 +43,10 @@ jobs:
 
     - name: Create bundle
       run: |
-        tar -czvf rdock.tar.gz \
+        tar -czvf rdock-${{ steps.set_candidate_name.outputs.CANDIDATE_NAME }}.tar.gz \
           bin/ lib/ include/ data/ scripts/ Makefile license.txt README.md old_README.md
 
     - name: Upload bundle
       uses: actions/upload-artifact@v3
       with:
-        name: rdock-${{ steps.set_candidate_name.outputs.CANDIDATE_NAME }}.tar.gz
-        path: rdock.tar.gz
+        path: rdock-${{ steps.set_candidate_name.outputs.CANDIDATE_NAME }}.tar.gz
