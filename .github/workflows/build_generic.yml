@@ -39,7 +39,7 @@ jobs:
 
     - name: Set candidate name
       id: set_candidate_name
-      run: echo "CANDIDATE_NAME=$(date +%y.%m).${{ github.event.number }}_${{ inputs.distribution }}_${{ inputs.compiler }}_${{ inputs.arch }}" >> "$GITHUB_OUTPUT"
+      run: echo "CANDIDATE_NAME=$(date +%y.%m).${{ github.run_number }}_${{ inputs.distribution }}_${{ inputs.compiler }}_${{ inputs.arch }}" >> "$GITHUB_OUTPUT"
 
     - name: Create bundle
       run: |
